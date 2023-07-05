@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="icon" type="images/x-icon" href="./img/logo-icon.svg" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <i class="icon bx bx-menu"></i>
+        <img
+          src="./img/yt-logo.png" 
+          alt="logo"
+        />
+      </div>
+      <div class="header-icon">
+        <div class="search ">
+          <form action="">
+            <input type="text" placeholder="Search" />
+            <button><i class="icon bx bx-search"></i></button>
+          </form>
+          <i class="icon bx bxs-microphone"></i>
+        </div>
+  
+        <div class="icons-group--right">
+          <i class="icon material-icons">videocam</i>
+  
+          <i class="icon material-icons">notifications</i>
+          <!-- <i class="icon material-icons display-this">account_circle</i> -->
+          <img src="./img/h3.jpg" alt="account img">
+        </div>
+      </div>
+
+      
+    </header>
+
+    <main>
+      <sidebar>
+        <nav>
+          <a href="#" class="nav-link nav-link--active">
+            <i class="icon material-icons">home</i>
+            <span>Home </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">local_fire_department</i>
+            <span>Trending </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">subscriptions</i>
+            <span>Subscriptions </span>
+          </a>
+          <hr />
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">library_add_check</i>
+            <span>Library </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">history</i>
+            <span>History </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">play_arrow</i>
+            <span>Your video </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">watch_later</i>
+            <span>Watch later </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">thumb_up</i>
+            <span>Liked </span>
+          </a>
+          <hr />
+          <p><strong>Subscriptions</strong></p>
+          <a href="#" class="nav-link">
+            <img src="./img/akane.jpg" alt="channel-img" />
+            <span>あかね的日本語教室 </span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="./img/riki.jpg" alt="channel-img" />
+            <span>Nhật ngữ Riki</span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="./img/h1.jpg" alt="channel-img" />
+            <span>con mèo béo </span>
+          </a>
+          <a href="#" class="nav-link">
+            <img src="./img/KEM.jpg" alt="channel-img" />
+            <span>KENH CUA KEM </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class=" add-icon material-icons"> add_circle </i>
+            <span>Browse channel</span>
+          </a>
+          <hr />
+          <p><strong>Explore</strong></p>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">settings</i>
+            <span>Settings </span>
+          </a>
+
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">flag</i>
+            <span>Flag </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">help</i>
+            <span>Help </span>
+          </a>
+          <a href="#" class="nav-link">
+            <i class="icon material-icons">sms_failed</i>
+            <span>Help </span>
+          </a>
+        </nav>
+      </sidebar>
+      <div class="content">
+        <div class="content-category">
+          <span class="content-category--item item--active"> All </span>
+          <span class="content-category--item"> Mixed </span>
+          <span class="content-category--item"> Music </span>
+          <span class="content-category--item"> Background music </span>
+          <span class="content-category--item"> Lo-fi </span>
+          <span class="content-category--item"> Playlist </span>
+          <span class="content-category--item"> Rain </span>
+          <span class="content-category--item"> Youth music </span>
+          <span class="content-category--item"> Live </span>
+
+          <span class="content-category--item"> Nobi nobita </span>
+          <span class="content-category--item"> Korean drama </span>
+          <span class="content-category--item"> Cat </span>
+          <span class="content-category--item"> Music </span>
+          <span class="content-category--item"> Gaming </span>
+          <span class="content-category--item"> Janpanese </span>
+        </div>
+
+        <div class="video-container">
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd1.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/h3.jpg "
+                  alt="author img "
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >The Hanoi Chamomile
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd2.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/riki.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >The Hanoi Chamomile
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd3.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/h3.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >The Hanoi Chamomile
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd10.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/KEM.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >KENH CUA KEM
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd4.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/akane.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>The Japanese Supermarket   </h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >あかね的日本語教室 
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd5.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/h1.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >The Hanoi Chamomile
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="short-title">
+          <h2>Short</h2>
+          <i class="icon material-icons">close</i>
+
+        </div>
+        
+        <div class="short-container">
+          <div class="short-item">
+            <div class="short-item-video">
+              <video
+                src="./video/dalat.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+            </div>
+            <div class="short-item-description">
+              <div class="short-item-description-title">
+                <p>
+                  thời tiết hôm nay rất ổn, kem thì ngọt, hoa thì rạng rỡ, em thấy
+                  đấy, thế giới này vẫn tốt đẹp và em cũng vậy
+                 
+                </p>
+                <i class="more-icon2 material-icons">more_vert</i>
+              </div>
+              
+              <p class="short-item-description-detail">234k Views</p>
+            </div>
+          </div>
+
+          <div class="short-item">
+            <div class="short-item-video">
+              <video
+                src="./video/vd6.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+            </div>
+            <div class="short-item-description">
+              <div class="short-item-description-title">
+                <p>
+                  Duong pho Sai Gon ve DEM
+                 
+                </p>
+                <i class="more-icon2 material-icons">more_vert</i>
+              </div>
+              
+              <p class="short-item-description-detail">234k Views</p>
+            </div>
+          </div>
+          <div class="short-item">
+            <div class="short-item-video">
+              <video
+                src="./video/dalat.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+            </div>
+            <div class="short-item-description">
+              <div class="short-item-description-title">
+                <p>
+                  thời tiết hôm nay rất ổn, kem thì ngọt, hoa thì rạng rỡ, em thấy
+                  đấy, thế giới này vẫn tốt đẹp và em cũng vậy
+                 
+                </p>
+                <i class="more-icon2 material-icons">more_vert</i>
+              </div>
+              
+              <p class="short-item-description-detail">234k Views</p>
+            </div>
+          </div>
+          <div class="short-item">
+            <div class="short-item-video">
+              <video
+                src="./video/vd9.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+            </div>
+            <div class="short-item-description">
+              <div class="short-item-description-title">
+                <p>
+                  Combo an dem khong beo tai cua hang tien loi
+                 
+                </p>
+                <i class="more-icon2 material-icons">more_vert</i>
+              </div>
+              
+              <p class="short-item-description-detail">234k Views</p>
+            </div>
+          </div>
+          <div class="short-item">
+            <div class="short-item-video">
+              <video
+                src="./video/vd11.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+            </div>
+            <div class="short-item-description">
+              <div class="short-item-description-title">
+                <p>
+                  Combo an dem khong beo tai cua hang tien loi
+                 
+                </p>
+                <i class="more-icon2 material-icons">more_vert</i>
+              </div>
+              
+              <p class="short-item-description-detail">234k Views</p>
+            </div>
+          </div>
+          <div class="short-item">
+            <div class="short-item-video">
+              <video
+                src="./video/vd9.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+            </div>
+            <div class="short-item-description">
+              <div class="short-item-description-title">
+                <p>
+                  Combo an dem khong beo tai cua hang tien loi
+                 
+                </p>
+                <i class="more-icon2 material-icons">more_vert</i>
+              </div>
+              
+              <p class="short-item-description-detail">234k Views</p>
+            </div>
+          </div>
+          <div class="short-item">
+            <div class="short-item-video">
+              <video
+                src="./video/vd10.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+            </div>
+            <div class="short-item-description">
+              <div class="short-item-description-title">
+                <p>
+                  ASMR TANGHULU CANDIED FRUITS 왕가탕후루 먹방 DESSERTS MUKBANG
+                  EATING SOUNDS 咀嚼音 タンフル
+                 
+                </p>
+                <i class="more-icon2 material-icons">more_vert</i>
+              </div>
+              
+              <p class="short-item-description-detail">234k Views</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd1.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/h3.jpg "
+                  alt="author img "
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >The Hanoi Chamomile
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd2.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/riki.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >The Hanoi Chamomile
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd3.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/h3.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >The Hanoi Chamomile
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd10.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/KEM.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >KENH CUA KEM
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd4.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/akane.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>The Japanese Supermarket   </h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >あかね的日本語教室 
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+          <div class="video-container--item">
+            <div class="image-container">
+              <video
+                src="./video/vd5.mp4"
+                type="video/mp4"
+                muted
+                class="vid"
+                loop
+                style="width: 365px"
+              ></video>
+              <span class="video-timing"> 20:40'</span>
+            </div>
+            <div class="video-description">
+              <div class="video-description-img">
+                <img
+                  src="./img/h1.jpg "
+                  alt="author img"
+                  class="video-description-img"
+                />
+              </div>
+
+              <div class="video-description-content">
+                <h4>Study with me/ 1 hour/ Japan</h4>
+                <div class="more-icon">
+                  <i class="icon material-icons">more_vert</i>
+                </div>
+                <span class="author"
+                  >The Hanoi Chamomile
+                  <i class="check-icon material-icons">check_circle</i></span
+                >
+                <p><span>64k Views</span> . <span>4 month ago</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      
+      const videos = document.querySelectorAll(".vid");
+
+      videos.forEach((video) => {
+        video.addEventListener("mouseenter", () => {
+          video.play();
+        });
+
+        video.addEventListener("mouseleave", () => {
+          video.pause();
+          video.currentTime = 0;
+        });
+      });
+    </script>
+  </body>
+</html>
