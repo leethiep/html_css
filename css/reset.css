@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@ body {
 }
 
 /* header section*/
-header {
+.header--top {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,7 +17,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
-  background-color:#fff;
+  background-color: #fff;
   z-index: 100;
   /* overflow: hidden; */
 }
@@ -31,7 +30,7 @@ main {
   /* justify-content: space-between; */
 }
 /* Sidebar */
-sidebar {
+.sidebar {
   height: 100%;
   /* width: 17%; */
   background-color: white;
@@ -40,10 +39,10 @@ sidebar {
   top: 60px;
   left: 0;
   overflow-y: scroll;
- 
-    bottom: 0;
+
+  bottom: 0;
 }
-sidebar::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
   display: none;
 }
 hr {
@@ -58,13 +57,13 @@ hr {
 .icon {
   font-size: 26px;
   color: rgb(100, 100, 100);
-    padding: 0 7px;
-    cursor: pointer;
+  padding: 0 7px;
+  cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
-  color:#000;
+  color: #000;
 }
 img {
   width: 100%;
@@ -73,5 +72,4 @@ img {
 }
 span {
   font-size: 15px;
-
 }
